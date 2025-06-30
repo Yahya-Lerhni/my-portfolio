@@ -12,6 +12,7 @@ import firstprojectimg from "../assets/Projects/My First project.png";
 import ecomimg from "../assets/Projects/E-com.png";
 import projectsimpleimg from "../assets/Projects/Project Simple.png";
 import arrayimg from "../assets/Projects/Array.png";
+import portfolioimg from "../assets/Projects/portfolio.png";
 
 const projects = [
   {
@@ -73,6 +74,12 @@ const projects = [
     description: "This was my first group project developed in collaboration with classmates during our studies. Together, we built a complete website from scratch, and my responsibilities focused on creating the page structure using HTML and applying styles with CSS/SASS. Working as a team taught us how to plan, divide tasks, and use Git for version control. It was a great opportunity to apply what we learned in class and gain real experience in team-based web development.",
     url: "https://yahya-lerhni.github.io/Aymen-yahya-adam-array/",
     image: arrayimg,
+  },
+   {
+    title: "My portfolio",
+    description: "I’m Yahya Lerhni, a web developer specialized in creating modern websites and apps using technologies like React, Tailwind, and Laravel. I craft smooth, attractive interfaces and write clean, efficient code. This portfolio reflects my journey in building innovative and practical digital solutions.",
+    url: "https://my-portfolio-pearl-five-46.vercel.app/",
+    image: portfolioimg,
   },
 ];
 
