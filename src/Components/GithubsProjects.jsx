@@ -2,16 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 motion
 import { IoEyeOutline } from "react-icons/io5";
-import cuisineImg from "../assets/projects/cuisine.png";
-import dardarkomImg from "../assets/projects/dardarkom.png";
-import animeImg from "../assets/projects/anime.png";
-import libraryImg from "../assets/projects/library.png";
-import yummyimg from "../assets/projects/yummy.png";
-import todolistimg from "../assets/projects/My To Do List.png";
-import firstprojectimg from "../assets/projects/My First project.png";
-import ecomimg from "../assets/projects/E-com.png";
-import projectsimpleimg from "../assets/projects/Project Simple.png";
-import arrayimg from "../assets/projects/Array.png";
+import cuisineImg from "../assets/Projects/cuisine.png";
+import dardarkomImg from "../assets/Projects/dardarkom.png";
+import animeImg from "../assets/Projects/anime.png";
+import libraryImg from "../assets/Projects/library.png";
+import yummyimg from "../assets/Projects/Yummy.png";
+import todolistimg from "../assets/Projects/My To Do List.png";
+import firstprojectimg from "../assets/Projects/My First project.png";
+import ecomimg from "../assets/Projects/E-com.png";
+import projectsimpleimg from "../assets/Projects/Project Simple.png";
+import arrayimg from "../assets/Projects/Array.png";
 
 const projects = [
   {
