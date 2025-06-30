@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'homefont';
+  src: url('../src/assets/Fonts/GrandSlang-Roman.ttf');
+}
+@font-face {
+  font-family: 'sitefont';
+  src: url('../src/assets/Fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:30rem;
+  margin-top: 2rem;
+}
+
+.title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'homefont';
+}
+
+.title h2 > span {
+  position: relative;
+  display: inline-block;
+  height: 3rem;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 5px;
+  color: gold;
+}
+/* CSS */
+img {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+
+.title h2 > span > span {
+  display: block;
+  animation: animatewords 7s infinite ease-in-out;
+  line-height: 3rem;
+}
+
+@keyframes animatewords {
+  0%   { transform: translateY(0%); }
+  20%  { transform: translateY(-100%); }
+  40%  { transform: translateY(-200%); }
+  60%  { transform: translateY(-300%); }
+  80%  { transform: translateY(-400%); }
+  100% { transform: translateY(0%); }
+}
+.p-motion {
+  backface-visibility: hidden;
+}
