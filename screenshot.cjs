@@ -12,8 +12,10 @@ const projects = [
   { name: "My First project", url: "https://yahya-lerhni.github.io/Yahya-Lerhni/" },
   { name: "E-com", url: "https://yahya-lerhni.github.io/e-com/" },
   { name: "Project Simple", url: "https://yahya-lerhni.github.io/simple-project/" },
-    { name: "Array", url: "https://yahya-lerhni.github.io/Aymen-yahya-adam-array/" },
-    { name: "portfolio", url: "https://my-portfolio-pearl-five-46.vercel.app/" },
+  { name: "Array", url: "https://yahya-lerhni.github.io/Aymen-yahya-adam-array/" },
+  { name: "portfolio", url: "https://my-portfolio-pearl-five-46.vercel.app/" },
+    { name: "fashe-theme", url: "https://lerhni-yahya-pf-react.vercel.app/" },
+
 
 ];
 

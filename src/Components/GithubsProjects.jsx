@@ -13,6 +13,7 @@ import ecomimg from "../assets/Projects/E-com.png";
 import projectsimpleimg from "../assets/Projects/Project Simple.png";
 import arrayimg from "../assets/Projects/Array.png";
 import portfolioimg from "../assets/Projects/portfolio.png";
+import fashtheme from "../assets/Projects/fashe-theme.png"
 
 const projects = [
   {
@@ -77,10 +78,16 @@ const projects = [
   },
    {
     title: "My portfolio",
-    description: "I’m Yahya Lerhni, a web developer specialized in creating modern websites and apps using technologies like React, Tailwind, and Laravel. I craft smooth, attractive interfaces and write clean, efficient code. This portfolio reflects my journey in building innovative and practical digital solutions.",
+    description: "This project is a React-based e-commerce website inspired by the Fashe Shopify theme by Colorlib. It features a modern, clean, and responsive design tailored for fashion and accessory online stores.",
     url: "https://my-portfolio-pearl-five-46.vercel.app/",
     image: portfolioimg,
   },
+  {
+    title: "Fashe Theme",
+    description: "I’m Yahya Lerhni, a web developer specialized in creating modern websites and apps using technologies like React, Tailwind, and Laravel. I craft smooth, attractive interfaces and write clean, efficient code. This portfolio reflects my journey in building innovative and practical digital solutions.",
+    url: "https://lerhni-yahya-pf-react.vercel.app/",
+    image: fashtheme,
+  }
 ];
 
 // Animation variants for container & items
