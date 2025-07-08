@@ -14,6 +14,7 @@ import projectsimpleimg from "../assets/Projects/Project Simple.png";
 import arrayimg from "../assets/Projects/Array.png";
 import portfolioimg from "../assets/Projects/portfolio.png";
 import fashtheme from "../assets/Projects/fashe-theme.png"
+import moroccanglow from '../assets/Projects/moroccanglow.png'
 
 const projects = [
   {
@@ -84,6 +85,12 @@ const projects = [
   },
   {
     title: "Fashe Theme",
+    description: "Moroccan Glow is a digital project offering a refined online shopping experience for authentic Moroccan natural products — inspired by ancestral traditions and grandma’s time-tested beauty secrets.",
+    url: "https://moroccan-glow.vercel.app/",
+    image: moroccanglow,
+  },
+  {
+    title: "Moroccan Glow",
     description: "I’m Yahya Lerhni, a web developer specialized in creating modern websites and apps using technologies like React, Tailwind, and Laravel. I craft smooth, attractive interfaces and write clean, efficient code. This portfolio reflects my journey in building innovative and practical digital solutions.",
     url: "https://lerhni-yahya-pf-react.vercel.app/",
     image: fashtheme,

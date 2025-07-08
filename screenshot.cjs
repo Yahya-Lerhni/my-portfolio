@@ -9,13 +9,22 @@ const projects = [
   { name: "library", url: "https://library-mu-eight.vercel.app/" },
   { name: "Yummy", url: "https://yahya-lerhni.github.io/Yahya-Lerhni-Pf-Dom/" },
   { name: "My To Do List", url: "https://yahya-lerhni.github.io/ToDo-List/" },
-  { name: "My First project", url: "https://yahya-lerhni.github.io/Yahya-Lerhni/" },
+  {
+    name: "My First project",
+    url: "https://yahya-lerhni.github.io/Yahya-Lerhni/",
+  },
   { name: "E-com", url: "https://yahya-lerhni.github.io/e-com/" },
-  { name: "Project Simple", url: "https://yahya-lerhni.github.io/simple-project/" },
-  { name: "Array", url: "https://yahya-lerhni.github.io/Aymen-yahya-adam-array/" },
+  {
+    name: "Project Simple",
+    url: "https://yahya-lerhni.github.io/simple-project/",
+  },
+  {
+    name: "Array",
+    url: "https://yahya-lerhni.github.io/Aymen-yahya-adam-array/",
+  },
   { name: "portfolio", url: "https://my-portfolio-pearl-five-46.vercel.app/" },
-    { name: "fashe-theme", url: "https://lerhni-yahya-pf-react.vercel.app/" },
-
+  { name: "fashe-theme", url: "https://lerhni-yahya-pf-react.vercel.app/" },
+  { name: "moroccanglow", url: "https://moroccan-glow.vercel.app/" },
 
 ];
 
@@ -25,11 +34,17 @@ const projects = [
   await page.setViewport({ width: 1280, height: 720 });
 
   for (const project of projects) {
-    const imgPath = path.join(__dirname, "src/assets/projects", `${project.name}.png`);
+    const imgPath = path.join(
+      __dirname,
+      "src/assets/projects",
+      `${project.name}.png`
+    );
 
     // ✅ Skip if screenshot already exists
     if (fs.existsSync(imgPath)) {
-      console.log(`⏭️ Screenshot already exists for ${project.name}, skipping...`);
+      console.log(
+        `⏭️ Screenshot already exists for ${project.name}, skipping...`
+      );
       continue;
     }
 
