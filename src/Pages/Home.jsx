@@ -30,32 +30,30 @@ const fadeFrom = (direction = "top", delay = 0) => {
 
 const Home = () => {
   return (
-    <div className="flex justify-between w-screen h-screen bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-white">
+    <div className="flex flex-col lg:flex-row w-full min-h-screen bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-white">
       
       {/* Left sidebar */}
       <motion.div
-        className="w-[10%] h-full flex flex-col items-center justify-between py-10 bg-white/10 backdrop-blur-md shadow-lg rounded-r-2xl"
+        className="w-full lg:w-[10%] h-auto lg:h-full flex flex-row lg:flex-col items-center justify-between py-6 lg:py-10 bg-white/10 backdrop-blur-md shadow-lg rounded-b-2xl lg:rounded-b-none lg:rounded-r-2xl"
         initial="hidden"
         animate="visible"
         variants={fadeFrom("left", 0)}
       >
-        <div className="flex flex-col gap-8 items-center">
+        <div className="flex flex-row lg:flex-col gap-8 items-center justify-center w-full">
           <FiLinkedin className="size-10 hover:text-yellow-400 transition-all duration-300 cursor-pointer" />
           <FiGithub className="size-10 hover:text-yellow-400 transition-all duration-300 cursor-pointer" />
           <FaInstagram className="size-10 hover:text-yellow-400 transition-all duration-300 cursor-pointer" />
         </div>
-
-        <div className="h-[30%]">
+        <div className="hidden lg:block h-[30%]">
           <img className="h-full" src={Images.lign} alt="divider" />
         </div>
-
-        <div className="text-center">
-          <p className="text-sm font-light tracking-widest">
+        <div className="text-center mt-4 lg:mt-0">
+          <p className="text-xs lg:text-sm font-light tracking-widest">
             © {new Date().getFullYear()}
           </p>
           <p
             style={{ fontFamily: "homefont" }}
-            className="text-md font-semibold mt-2 w-32"
+            className="text-sm lg:text-md font-semibold mt-2 w-24 lg:w-32"
           >
             Yahya Lerhni
           </p>
@@ -64,57 +62,54 @@ const Home = () => {
 
       {/* Bio / Description */}
       <motion.div
-        className="w-[20%] h-full flex flex-col justify-center p-6 gap-6 bg-white/10 backdrop-blur-lg shadow-inner rounded-lg"
+        className="w-full lg:w-[20%] h-auto lg:h-full flex flex-col justify-center items-center p-4 lg:p-6 gap-4 lg:gap-6 bg-white/10 backdrop-blur-lg shadow-inner rounded-lg"
         initial="hidden"
         animate="visible"
         variants={fadeFrom("left", 0.3)}
       >
-        <h1 style={{ fontFamily: "homefont" }} className="font-bold text-xl tracking-wide">
+        <h1 style={{ fontFamily: "homefont" }} className="font-bold text-lg lg:text-xl tracking-wide text-center">
           Yahya Lerhni
         </h1>
-        <p style={{ fontFamily: "sitefont" }} className="text-sm leading-relaxed">
+        <p style={{ fontFamily: "sitefont" }} className="text-xs lg:text-sm leading-relaxed text-center">
           Front-End Developer / Back-End Developer / UI Designer.
         </p>
-        <p style={{ fontFamily: "sitefont" }} className="text-sm leading-relaxed">
+        <p style={{ fontFamily: "sitefont" }} className="text-xs lg:text-sm leading-relaxed text-center">
           I enjoy collaborating in teams and bringing ideas to life — whether it's a website, an app, or any creative digital solution.
         </p>
-        <p style={{ fontFamily: "sitefont" }} className="text-sm leading-relaxed">
+        <p style={{ fontFamily: "sitefont" }} className="text-xs lg:text-sm leading-relaxed text-center">
           Currently working on personal and group projects, building custom web experiences using modern programming languages and tools.
         </p>
-        <p style={{ fontFamily: "sitefont" }} className="text-sm leading-relaxed">
+        <p style={{ fontFamily: "sitefont" }} className="text-xs lg:text-sm leading-relaxed text-center">
           I love turning unique concepts into functional, high-quality digital products.
         </p>
       </motion.div>
 
       {/* Menu */}
-      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-10">
-        <motion.div initial="hidden" animate="visible" variants={fadeFrom("top", 0.4)}>
+      <div className="w-full lg:w-[60%] h-auto lg:h-full flex flex-col justify-center items-center gap-6 lg:gap-10 py-8">
+        <motion.div initial="hidden" animate="visible" variants={fadeFrom("top", 0.4)} className="w-full flex justify-center">
           <Link to="/about">
-            <h1 style={{ fontFamily: "homefont" }} className=" text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300">
+            <h1 style={{ fontFamily: "homefont" }} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300 text-center">
               About
             </h1>
           </Link>
         </motion.div>
-
-        <motion.div initial="hidden" animate="visible" variants={fadeFrom("bottom", 0.6)}>
+        <motion.div initial="hidden" animate="visible" variants={fadeFrom("bottom", 0.6)} className="w-full flex justify-center">
           <Link to="/portfolio">
-            <h1 style={{ fontFamily: "homefont" }} className="text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300">
+            <h1 style={{ fontFamily: "homefont" }} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300 text-center">
               Portfolio
             </h1>
           </Link>
         </motion.div>
-
-        <motion.div initial="hidden" animate="visible" variants={fadeFrom("right", 0.8)}>
+        <motion.div initial="hidden" animate="visible" variants={fadeFrom("right", 0.8)} className="w-full flex justify-center">
           <Link to="/tools">
-            <h1 style={{ fontFamily: "homefont" }} className=" hover:-rotate-4 text-8xl cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300">
+            <h1 style={{ fontFamily: "homefont" }} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300 text-center">
               Tools
             </h1>
           </Link>
         </motion.div>
-
-        <motion.div initial="hidden" animate="visible" variants={fadeFrom("left", 1)}>
+        <motion.div initial="hidden" animate="visible" variants={fadeFrom("left", 1)} className="w-full flex justify-center">
           <Link to="/contact">
-            <h1 style={{ fontFamily: "homefont" }} className=" text-8xl cursor-pointer font-bold hover:-rotate-4 text-white hover:text-yellow-400 transition duration-300">
+            <h1 style={{ fontFamily: "homefont" }} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl hover:-rotate-4 cursor-pointer font-bold text-white hover:text-yellow-400 transition duration-300 text-center">
               Contact
             </h1>
           </Link>
