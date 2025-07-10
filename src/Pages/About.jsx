@@ -9,7 +9,7 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen w-full">
+    <div className="relative min-h-screen w-screen">
       <Menubar />
       <div className="w-full min-h-screen relative bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] flex flex-col-reverse lg:flex-row items-center justify-center px-4 sm:px-6 py-8 gap-8">
         {/* Left Section */}
