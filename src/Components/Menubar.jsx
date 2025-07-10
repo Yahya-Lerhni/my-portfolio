@@ -16,13 +16,17 @@ const Mainbar = () => {
     <div className="fixed z-50 sm:top-[10%] sm:left-6 max-sm:bottom-6  left-1/2 sm:translate-y-0 -translate-x-1/2 sm:translate-x-0">
       {/* Toggle Button */}
       <motion.div
-        onClick={toggleMenu}
-        whileHover={{ scale: 1.15, rotate: 8 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-black/50  backdrop-blur-md p-3 rounded-full cursor-pointer text-white hover:text-[gold] shadow-lg border border-white/10"
-      >
-        <TiThMenuOutline className="size-7  sm:size-8" />
-      </motion.div>
+  onClick={toggleMenu}
+  initial={{ y: -30, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+  whileHover={{ scale: 1.15, rotate: 8 }}
+  whileTap={{ scale: 0.9 }}
+  className="bg-black/50 backdrop-blur-md p-3 rounded-full cursor-pointer text-white hover:text-[gold] shadow-lg border border-white/10"
+>
+  <TiThMenuOutline className="size-7 sm:size-8" />
+</motion.div>
+
 
       {/* Navigation Icons */}
       <AnimatePresence>{open && <NavIcons />}</AnimatePresence>

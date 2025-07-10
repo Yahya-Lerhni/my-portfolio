@@ -144,7 +144,7 @@ return (
   transition={{ duration: 2, delay: 2.9 }}
   src={Images.myimage}
   alt="My portrait"
-  className="rounded-full object-cover object-top max-sm:h-70 max-sm:w-70 sm:w-50 sm:h-50 md:w-0 md:h-0 lg:w-[25rem] lg:h-[25rem] aspect-square shadow-lg"
+  className="rounded-full w-100 h-100 object-cover object-top max-sm:h-70 max-sm:w-70 sm:w-50 sm:h-50 md:w-50 md:h-50 lg:w-[25rem] lg:h-[25rem] aspect-square shadow-lg"
 />
       </div>
     </div>
