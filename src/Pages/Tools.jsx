@@ -99,7 +99,7 @@ const Tools = () => {
             variants={containerVariants}
             initial="hidden"
             animate="show"
-            className="w-full p-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-6 bg-white/10 backdrop-blur-sm rounded-2xl shadow-md shadow-yellow-200/30"
+            className="w-full p-4  flex flex-wrap justify-center items-center sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-6 bg-white/10 backdrop-blur-sm rounded-2xl shadow-md shadow-yellow-200/30"
           >
             {tools.map((tool, index) => (
               <motion.img
